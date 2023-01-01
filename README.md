@@ -1,5 +1,5 @@
 # Machine_learning_project
 
-Requirement
+# Requirement
 
-1. [Git CLI  ] (https://git-scm.com/download/win)
+1. [Git CLI] (https://git-scm.com/download/win)
