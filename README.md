@@ -2,4 +2,4 @@
 
 Requirement
 
-1.Git CLi : [Git CLI] (https://git-scm.com/download/win)
+1. [Git CLI  ] (https://git-scm.com/download/win)
