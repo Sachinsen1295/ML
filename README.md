@@ -29,7 +29,7 @@ by commands from powershell/command prompt
 
 
 
-### Creating Conda evironment - Commands
+### *Creating Conda evironment - Commands*
 
 
 
@@ -64,7 +64,7 @@ python app.py
 ````
 
 
-### Push changes to github # comands
+### *Push changes to github*
 
 Note: to Add files in git 
 
@@ -79,7 +79,10 @@ OR
 ````
 git add . "to add all the files in one line"
 ````
+To check status
+````
 git status 
+````
 ````
  > Note : "suppose you have create a file but it not added in git , this command will provide status of which file is not tracked by git"
 ````
@@ -118,7 +121,7 @@ To roll back
 ````
 ````
 
-### To COnnect AWS with Git hub
+### *To Connect AWS with Git hub*
 
 to Setup we need 3 things
 
@@ -126,7 +129,7 @@ to Setup we need 3 things
 2. aws apikey
 3. aws app_name
 
-### Docker
+### *Docker*
 
 Create Dockerfile and .dockerignore
 ````
