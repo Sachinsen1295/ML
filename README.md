@@ -34,21 +34,25 @@ by commands from powershell/command prompt
 
 command promt/dit bash/powershell
 
-``````
+````
 conda --version
-``````
+````
+````
 conda create -p venv python== 3.7 -y  " Create venv in tha same directory"
-``````
+````
+````
 conda activate venv/
-`````
+````
 Or
-`````
+````
 conda activate venv
-`````
+````
+
 "to install requirements file"
+````
 pip install -r requirements.txt
 
-``````
+````
 
 > Note : create app.py file and in command prompt type 
 ````
@@ -74,11 +78,11 @@ git add . "to add all the files in one line"
 git status 
 ````
  > Note : "suppose you have create a file but it not added in git , this command will provide status of which file is not tracked by git"
-`````
+````
 
-```
+````
 git commit  "to comit change"
-```
+````
 
 to check log
 ````
@@ -89,4 +93,19 @@ git log
 
 ````
 git commit -m "message"
+````
 
+> Note: To push changes/to send version
+
+````
+git push origin main
+````
+To check remote URL
+
+````
+git remote -v
+````
+to know branch
+````
+git branch
+````
