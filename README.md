@@ -3,6 +3,7 @@
 ### Software and account requirement
 
 1. [Git CLI](https://git-scm.com/download/win)
+2. [Git Command/ Documentation](https://git-scm.com/docs/git)
 
 
 #### TO clone git hub repository in VS and local system
@@ -28,7 +29,7 @@ by commands from powershell/command prompt
 
 
 
-#### Creating Conda evironment - Commands
+### Creating Conda evironment - Commands
 
 
 
@@ -37,9 +38,12 @@ command promt/dit bash/powershell
 ````
 conda --version
 ````
+Create venv in tha same directory
 ````
-conda create -p venv python== 3.7 -y  " Create venv in tha same directory"
+conda create -p venv python== 3.7 -y  
 ````
+To activate venv 
+
 ````
 conda activate venv/
 ````
@@ -48,21 +52,21 @@ Or
 conda activate venv
 ````
 
-"to install requirements file"
+to install requirements file
 ````
 pip install -r requirements.txt
 
 ````
 
-> Note : create app.py file and in command prompt type 
+Create app.py file and in command prompt type  to rune the file 
 ````
 python app.py
 ````
 
 
-#### Push changes to github # comands
+### Push changes to github # comands
 
-> note: to Add files in git 
+Note: to Add files in git 
 
 ````
 git add filename "to maintain the version control system"
@@ -89,13 +93,13 @@ to check log
 git log
 ````
 
-> Note: to commit changes
+Note: to commit changes
 
 ````
 git commit -m "message"
 ````
 
-> Note: To push changes/to send version
+To push changes/to send version
 
 ````
 git push origin main
@@ -109,3 +113,66 @@ to know branch
 ````
 git branch
 ````
+To roll back
+
+````
+````
+
+### To COnnect AWS with Git hub
+
+to Setup we need 3 things
+
+1. aws email 
+2. aws apikey
+3. aws app_name
+
+### Docker
+
+Create Dockerfile and .dockerignore
+````
+FROM python:3.7
+COPY . /app
+WORKDIR /app
+RUN pip install -r requirements.txt
+EXPOSE $PORT
+CMD gunicorn --workers=4 --bind 0.0.0.0:$PORT app:app
+````
+dockerignore file is use to enter folder/file name which you don't want to be get into container
+
+````
+venv/
+.git
+.gitignore
+````
+
+BUILD DOCKER IMAGE
+
+```` 
+docker build -t <image_name>:<tagname> .
+````
+````
+example : docker build -t ml-project:latest .
+````
+> NOTE: Image name for docker image must be in lowercase
+
+to list docker images
+
+````
+docker images
+````
+
+Run docker image
+
+````
+docker run -p 5000:5000 -e PORT=5000 <image id>
+````
+To check the running container in docker
+````
+docker ps
+````
+
+To stop the docker the container 
+````
+docker stop <container_id>or 4digit of <contain_id>
+````
+
