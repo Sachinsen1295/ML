@@ -179,3 +179,11 @@ To stop the docker the container
 docker stop <container_id>or 4digit of <contain_id>
 ````
 
+### *Setup.py file*
+first run
+````
+python setup.py
+````
+````
+python setup.py install
+````
