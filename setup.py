@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup,find_packages
 from typing import List
 
 
@@ -20,7 +20,7 @@ def get_requirements_list()->List[str]:
     """
     
     with open(REQUIREMENT_FILE) as requirement_file:
-        return requirement_file.readlines()
+        return requirement_file.readlines().remove("-e .")
 
 
 #Declaring variables for setup functions
