@@ -33,9 +33,14 @@ setup(
     version=VERSION,
     author=AUTHOR_NAME,
     description=DESCRIPTION,
-    packages=PACKAGES,
+    packages=find_packages(),  
     install_requires=get_requirements_list()
       
     
 )
 
+
+"""also ind_packages() can be used insted of PACKAGES directly,
+    it will return all the folder name where init is there"""
+    
+""" '-e .' is used to install package like in this housing folder we have"""

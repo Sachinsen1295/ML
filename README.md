@@ -29,7 +29,7 @@ by commands from powershell/command prompt
 
 
 
-### *Creating Conda evironment - Commands*
+1. ### *Creating Conda evironment - Commands*
 
 
 
@@ -64,7 +64,7 @@ python app.py
 ````
 
 
-### *Push changes to github*
+2. ### *Push changes to github*
 
 Note: to Add files in git 
 
@@ -121,7 +121,7 @@ To roll back
 ````
 ````
 
-### *To Connect AWS with Git hub*
+3. ### *To Connect AWS with Git hub*
 
 to Setup we need 3 things
 
@@ -129,7 +129,7 @@ to Setup we need 3 things
 2. aws apikey
 3. aws app_name
 
-### *Docker*
+4. ### *Docker*
 
 Create Dockerfile and .dockerignore
 ````
@@ -179,14 +179,15 @@ To stop the docker the container
 docker stop <container_id>or 4digit of <contain_id>
 ````
 
-### *Setup.py file*
-first run
+5. ### *Setup.py file*
+First run
 ````
 python setup.py
 ````
 ````
 python setup.py install
 ````
+It is use to install all the libraries to execute 
 ````
 pip install -e .
 ````
