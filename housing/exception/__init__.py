@@ -3,7 +3,7 @@ import sys
 
 class HousingException(Exception):
     
-    def __init__(self,error_messgae:Exception, error_details:sys): #error message tells use the error and sys record the reason of error
+    def __init__(self,error_message:Exception, error_detail:sys): #error message tells use the error and sys record the reason of error
         super().__init__(error_message)
         
         # Super is equivalent Exception(error_message)
@@ -14,7 +14,7 @@ class HousingException(Exception):
         
         
     @staticmethod
-    def get_detailed_error_message(error_messgae:Exception, error_details:sys)->str: 
+    def get_detailed_error_message(error_message:Exception, error_detail:sys)->str: 
         # ->str use to provide input in string "->str "this is a return type
         
         """

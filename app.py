@@ -5,13 +5,12 @@ import sys
 
 app = Flask(__name__)
 
-@app.route("/", methods = ['GET','POST'])
-           
+@app.route("/", methods = ['GET','POST'])           
 def index():
     try:
         raise Exception("we are testing exception")
     except Exception as e:
-        raise HousingException(e,sys) from e
+        housing= HousingException(e,sys)
         logging.info(housing.error_message)
         logging.info("we are testing our project")
     return "starting machine learning project"  
@@ -19,3 +18,4 @@ def index():
 
 if __name__ =="__main__":
     app.run(debug=True)
+    
