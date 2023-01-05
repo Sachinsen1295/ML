@@ -27,6 +27,12 @@ by commands from powershell/command prompt
 
 6. in Vscode open terminal and then select gitbash terminal 
 
+To check app file 
+
+````
+python app.py
+````
+
 
 
 1. ### *Creating Conda evironment - Commands*
@@ -191,3 +197,8 @@ It is use to install all the libraries to execute
 ````
 pip install -e .
 ````
+
+6. ### *Create folders under housing*
+
+component,config,entity,exception,pipeline,logger and "__init__.py" file amound each package/folder
+
