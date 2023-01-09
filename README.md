@@ -208,4 +208,65 @@ component,config,entity,exception,pipeline,logger and "__init__.py" file amound 
 ````
 pip install ipykernel
 ````
+Import PyYAML file to ready YAML file format
+
+````
+pip install PyYAML
+````
+
+8. To read YAML file 
+
+````
+import os
+os.getcwd()
+## to change directory
+
+os.chdir("d:\\Data Analyst course\\machine learning\\Machine_learning_project")
+
+os.getcwd()
+os.listdir(".")
+# to read congfig file
+
+"config/config.yaml"
+## to join file path with directory
+
+config_file_path = os.path.join("config","config.yaml")
+config_file_path
+# to check file exists or not
+os.path.exists(config_file_path)
+````
+
+#### TO read YAML file use below comand
+
+````
+import YAML
+
+config_info=None
+
+with open(config_file_path,"rb") as yaml_file:
+    config_info = yaml.safe_load(yaml_file)
+config_info
+
+````
+#### Create function to read YAML file and create util file and dump the code
+````
+
+def read_yaml_file(file_path:str)->dict:
+    """
+    read yaml file and returns the content as dictionary
+    file path:str
+    """
+    try:
+        with open(file_path, 'rb') as yaml_file:
+            return yaml.safe_load(yaml_file)
+        
+    except Exception as e:
+        raise e
+````
+````
+
+read_yaml_file(config_file_path)
+
+````
+
 
