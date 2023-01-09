@@ -4,5 +4,5 @@ typing
 sklearn
 pandas
 numpy 
--e .
 PyYAML
+-e .
