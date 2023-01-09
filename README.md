@@ -21,7 +21,7 @@ by commands from powershell/command prompt
 1. create new repository in github
 2. create fresh folder in any location of Local system
 3. click in folder and press shift+ right click and power shell/command prompt
-4. in power shell write # comand  -  git clone "Repository Link"
+4. in power shell write # comand  -  git clone <"Repository Link">
 4. #command - pwd
 5. open VScode and select that project fold and in that that clone repository 
 
@@ -201,4 +201,11 @@ pip install -e .
 6. ### *Create folders under housing*
 
 component,config,entity,exception,pipeline,logger and "__init__.py" file amound each package/folder
+
+
+7. ### Install ipykernel to run jupiter notebook
+
+````
+pip install ipykernel
+````
 
