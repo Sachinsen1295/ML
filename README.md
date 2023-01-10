@@ -46,7 +46,7 @@ conda --version
 ````
 Create venv in tha same directory
 ````
-conda create -p venv python== 3.7 -y  
+conda create -p venv python==3.7 -y  
 ````
 To activate venv 
 
